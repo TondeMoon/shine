@@ -1,0 +1,37 @@
+{
+  "title": "Home details",
+  "h1": "Statements breakdown",
+  "statem": "Statements",
+  "history": "Price history",
+  "operations": "operations",
+  "months": {
+    "January": 0,
+    "February": 1,
+    "March": 2,
+    "April": 3,
+    "May": 4,
+    "June": 5,
+    "July": 6,
+    "August": 7,
+    "September": 8,
+    "October": 9,
+    "November": 10,
+    "December": 11
+  },
+  "costs": [
+    { "_id": 2, "month": "February", "year": 2022, "value": 600, "currency": "CHF" },
+    { "_id": 1, "month": "January", "year": 2022, "value": 700, "currency": "CHF" },
+    { "_id": 3, "month": "March", "year": 2022, "value": 650, "currency": "CHF" }
+  ],
+  "modal": {
+    "h1": "Estimated monthly owner expenses",
+    "text": "oww owners share home operating expenses pro rata, and expenses are passed along monthly at cost. At closing, owners pay 6 months of home expenses (not including the OWNERO Management Fee) to fund initial operating costs, in addition to monthly operating expenses.",
+    "tax": "Property Taxes",
+    "clean": "Cleaning Fee",
+    "management": "Property Management",
+    "monthly": "Monthly Contribution",
+    "total": "Total",
+    "yearly": "Annual Total",
+    "close": "Close"
+  }
+}

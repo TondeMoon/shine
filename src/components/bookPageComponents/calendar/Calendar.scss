@@ -1,0 +1,198 @@
+@use '../../../pageStyles/mixins' as m;
+@use '../../../pageStyles/variables' as v;
+
+.roundButtonBlack {
+  @include m.darkButton();
+}
+
+.calendarWrap {
+  @include m.calendarWrap();
+  height: 100%;
+}
+.calendarWrap div {
+  width: 100%;
+}
+
+.rdrMonthAndYearWrapper {
+  background-color: v.$calendarTop;
+  padding-top: 0;
+}
+
+.rdrMonthAndYearPickers select {
+  color: #ffffff;
+  font-family: Montserrat, sans-serif !important;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rdrMonth {
+  padding: 0;
+  background-color: v.$light-beige;
+}
+
+.rdrNextPrevButton {
+  background-color: transparent !important;
+}
+.rdrDateDisplayWrapper {
+  display: none;
+}
+
+.rowLineCalendar {
+  background-color: v.$gray-border;
+  width: 90%;
+  margin: 10px auto 16px auto;
+}
+
+.rdrSelected, .rdrInRange, .rdrStartEdge, .rdrEndEdge {
+  top: 1px;
+  bottom: 1px;
+}
+
+.rdrStartEdge {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+}
+
+
+element.style {
+  color: rgb(189, 188, 219);
+}
+.rdrStartEdge {
+  border-top-left-radius: 2em;
+  border-bottom-left-radius: 2em;
+  left: 0;
+}
+.rdrSelected, .rdrInRange, .rdrStartEdge, .rdrEndEdge {
+  top: 1px;
+  bottom: 1px;
+}
+.rdrEndEdge {
+  border-top-right-radius: 2em;
+  border-bottom-right-radius: 2em;
+  right: 0px;
+}
+
+.choose {
+  @include m.smallHeader();
+  padding-bottom: 16px;
+  margin-top: 10px !important;
+}
+
+.calendarInfo {
+  height: 90px;
+  background-color: transparentize(v.$calendarTop, 0.7);
+  width: 100%;
+}
+
+.calendarInfo div:first-child {
+  padding: 25px 30px 25px 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto !important;
+}
+
+.arriveInfo {
+  height: 90px;
+  padding-top: 25px;
+  background-color: transparentize(v.$calendarTop, 0.7);
+  width: 100%;
+}
+
+.arriveGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blueText {
+  @include m.text();
+  margin-bottom: 0;
+  display: flex;
+  padding-left: 13px;
+}
+
+.blueLine {
+  @include m.text();
+  margin-bottom: 0;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600 !important;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  opacity: 0.5;
+  width: auto !important;
+}
+
+.bookingButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 16px;
+  width: auto !important;
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.bookingButtons button {
+  min-width: 120px;
+
+  @media (max-width: 500px) {
+    margin-top: 20px;
+  }
+}
+
+.blueWords {
+  @include m.smallHeader();
+  color: v.$siren !important;
+  text-decoration: underline;
+  cursor: pointer;
+
+  @media (max-width: 900px) {
+    padding-bottom: 20px;
+  }
+}
+
+.arriveLine {
+  width: 88%;
+  margin: 5px auto;
+  padding: 0;
+  height: 1px;
+}
+
+.blackWords {
+  @include m.text();
+  margin-bottom: 0;
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600 !important;
+  font-size: 14px;
+  line-height: 20px;
+  width: auto !important;
+}
+
+.rdrDayDisabled {
+color: lightgray !important;
+opacity: 0.6;
+background-color: transparent !important;
+}
+
+.rdrMonthPicker select option, .rdrYearPicker select option {
+  background-color: v.$calendarTop;
+  font-size: 12px;
+}
+
+.bookDate {
+  color: #7E7CCF;
+  font-size: 14px;
+  font-weight: 600;
+ text-align: center;
+ text-transform: uppercase;
+ line-height: 20px;
+ margin-bottom: -11px;
+}

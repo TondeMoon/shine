@@ -1,0 +1,10 @@
+@use '../pageStyles/variables' as v;
+
+
+.houses-wrapper {
+  background-color: transparentize(v.$background-gray, 0.5);
+  display: flex;
+  flex-direction: row;
+  padding: 117px 30px 36px 30px;
+  min-height: 100%;
+}

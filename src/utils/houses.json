@@ -1,0 +1,81 @@
+[
+  {
+    "status": "ready",
+    "_id": "61a4ec4d989b43e829c7417f",
+    "totalParts": 8,
+    "name": "Villa",
+    "description": "A beautifuth",
+    "currency": {
+      "_id": "619f3e259db99615ffb9348c",
+      "key": "CHF",
+      "name": "CHF",
+      "symbol": "CHF ",
+      "createdAt": "2021-11-25T07:41:25.587Z",
+      "updatedAt": "2021-11-30T09:55:30.204Z"
+    },
+    "price": 1112500,
+    "wholeHomePrice": 8900000,
+    "closingDeal": 89000,
+    "serviceFee": 150187,
+    "plotSquare": 1200,
+    "totalShareOwnership": 1351687,
+    "wholeHomeValue": 10813500,
+    "latitude": "48",
+    "longitude": "9",
+    "manager": {
+      "name": "Sabrina Nussbaum",
+      "phone": "+41 027 555555",
+      "mobile": "+41 078 5555555",
+      "email": "sab@o5o.com"
+    },
+    "costs": [
+      { "_id": 2, "month": "February", "year": 2022, "value": 1186, "currency": "CHF" },
+      { "_id": 1, "month": "January", "year": 2022, "value": 945, "currency": "CHF" },
+      { "_id": 3, "month": "March", "year": 2022, "value": 978, "currency": "CHF" },
+      { "_id": 4, "month": "April", "year": 2022, "value": 1146, "currency": "CHF" }
+    ],
+    "monthCosts": {
+      "January": [
+        { "value": 223, "name": "Property Taxes", "data": "propertyTaxes", "share": "24%" },
+        { "value": 178, "name": "Cleaning fee", "data": "cleaningFee", "share": "19%" }
+      ],
+      "February": [
+        { "value": 223, "name": "Property Taxes", "data": "propertyTaxes", "share": "18%" },
+        { "value": 450, "name": "Cleaning fee", "data": "cleaningFee", "share": "36%" }
+      ],
+      "March": [
+        { "value": 223, "name": "Property Taxes", "data": "propertyTaxes", "share": "23%" },
+        { "value": 90, "name": "Cleaning fee", "data": "cleaningFee", "share": "9%" }
+      ],
+      "April": [
+        { "value": 223, "name": "Property Taxes", "data": "propertyTaxes", "share": "19%" },
+        { "value": 190, "name": "Cleaning fee", "data": "cleaningFee", "share": "17%" }
+      ]
+    },
+    "monthlyCosts": {
+      "propertyTaxes": { "value": 223, "name": "Property Taxes" },
+      "cleaningFee": { "value": 178, "name": "Cleaning fee" }
+    },
+    "monthlyContribution": 945,
+    "annualTotal": 11340,
+    "bedroomsCount": 4,
+    "bathroomsCount": 5,
+    "livingSquare": 120,
+    "area": 350,
+    "address": "Switzerland, Nonce",
+    "photos": [
+      "https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2021/08/download-23.jpg"
+    ],
+    "createdAt": "2021-11-29T15:05:49.922Z",
+    "updatedAt": "2022-02-24T11:25:19.434Z",
+    "slug": "villa",
+    "__v": 0,
+    "territoryArea": 700,
+    "combinedLocation": {
+      "countryId": "61976921f7c92a12464f0795",
+      "regionId": "61a4ec7f989b43e829c741c9",
+      "name": "Switzerland"
+    },
+    "id": "61a4ec4d989b43e829c7417f"
+  }
+]

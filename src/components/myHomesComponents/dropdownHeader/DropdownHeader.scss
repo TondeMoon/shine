@@ -1,0 +1,97 @@
+@use '../../../pageStyles/variables' as v;
+
+.wrapper {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.header {
+  color: v.$dark-gray;
+  text-align: left;
+  width: 100%;
+  font-family: Montserrat, sans-serif !important;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.menu {
+  padding: 7px 0 30px 0;
+  width: 100%;
+  margin: 0;
+  border: none;
+  top: -2.05px;
+  border-radius: 0;
+  // position: absolute;
+  top: 60px;
+  animation: growDown 400ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+.oneItem {
+  font-family: Montserrat, sans-serif !important;
+  width: 100%;
+  color: v.$dark-gray;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+  padding-left: 0;
+}
+
+.oneItem span:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icon {
+  background-image: url('../../../images/arrDown.svg') !important;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 3px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 97%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.iconClosed {
+  background-image: url('../../../images/arrUp.svg') !important;
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 3px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 97%;
+  margin-left: 5px;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.statLine {
+  opacity: 0.5;
+  color: v.$gray-border;
+}

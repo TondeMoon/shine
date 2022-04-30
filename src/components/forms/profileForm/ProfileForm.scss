@@ -1,0 +1,69 @@
+@use '../../../pageStyles/variables' as v;
+@use '../../../pageStyles/mixins' as m;
+
+.roundButtonDark {
+  @include m.darkButton();
+  width: 156px;
+}
+
+.profileForm {
+  display: block;
+  columns: 2;
+  column-gap: 50px;
+
+  @media (max-width: 1000px) {
+    display: block;
+    columns: 1
+  }
+}
+
+.formField {
+  margin-top: 5px !important;
+  width: 279px !important;
+  margin-bottom: 10px !important;
+
+  @media (max-width: 992px) {
+    width: auto !important;
+  }
+}
+
+.formField div {
+  border-radius: 0 !important;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 32px;
+  padding-right: 3px;
+}
+
+.overallWrapper {
+  @media (min-width: 1180px) {
+    max-width: 80%;
+  }
+}
+
+.form-select {
+  width: 279px !important;
+
+  @media (max-width: 992px) {
+    width: 270.4px !important;
+  }
+
+  @media (max-width: 992px) {
+    min-width: auto !important;
+  }
+
+  @media (max-width: 390px) {
+    width: 100% !important;
+  }
+}
+
+.popup {
+  background-color: v.$dark-gray;
+  width: 170px;
+  color: #ffffff;
+  box-shadow: none;
+  font-size: 13px !important;
+}

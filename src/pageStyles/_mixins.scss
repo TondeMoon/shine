@@ -1,0 +1,140 @@
+@use './variables' as *;
+
+@mixin clearButton {
+  cursor: pointer;
+  font-family: Montserrat, sans-serif !important;
+  border-radius: 68px;
+  font-weight: 500;
+  font-size: 14px;
+  height: 44px;
+  line-height: 22px;
+  text-align: center;
+  padding: 9.5px 20px 11px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: 0.07em;
+}
+
+@mixin whiteButton {
+  background-color: transparent;
+  color: $dark-gray;
+  border: 1px solid $dark-gray;
+  @include clearButton();
+
+  &:hover {
+    background: $hover-grey;
+    color: $light-beige;
+  }
+
+  &:focus {
+    background: $dark-gray;
+    color: $light-beige;
+  }
+}
+
+@mixin darkButton {
+  background: $dark-gray;
+  color: #ffffff;
+  border: 1px solid $dark-gray;
+  @include clearButton();
+
+  &:hover {
+    background: $light-beige;
+    color: $dark-gray;
+  }
+  
+  &:focus {
+    background: $dark-gray;
+    color: $light-beige;
+  }
+  &:disabled {
+    border: 1px solid $gray-border;
+    background: $gray-border;
+    color: #ffffff;
+  }
+}
+
+@mixin midTitle {
+  font-family: Montserrat !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  line-height: 41px !important;
+}
+
+@mixin smallHeader {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  text-align: center !important;
+  color: #333333 !important;
+}
+
+@mixin text {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+  color: #333333 !important;
+}
+
+@mixin arrowNextInRound {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  background-size: 97%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-image: url('../images/arrowInRound.svg');
+
+  &:hover {
+    background-image: url('../images/arrNextGrey.svg');
+  }
+
+  &:focus {
+    background-image: url('../images/arrNextBlack2.svg');
+  }
+}
+
+
+@mixin emptyButton {
+  padding: 0 !important;
+  margin: 0 !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+@mixin calendarWrap {
+  border: 1px solid $gray-border;
+  background-color: $light-beige;
+}
+
+@mixin bigHeader {
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 29px !important;
+  text-align: center !important;
+}
+
+@mixin emptyHeight {
+  height: 80px;
+}
+
+@mixin statusLabel {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  padding: 11px 27px 11px 33px !important;
+  z-index: 100;
+  border-radius: 30px 0 0 30px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: $dark-gray;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}

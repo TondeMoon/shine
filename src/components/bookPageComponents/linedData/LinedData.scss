@@ -1,0 +1,190 @@
+.RowLine {
+  color: #3d3d3d;
+  opacity: 0.5;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.PageMobile {
+  @media (min-width: 1230px) {
+    display: none;
+  }
+}
+
+.name-container {
+  font-size: 18px;
+  
+}
+
+.name-container div:first-child {
+  color: #3d3d3d !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.TransparentButton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
+
+.ParameterHeading {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #979797;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  text-align: left;
+}
+
+.ParameterHeadingSum {
+  padding-top: 30px;
+}
+
+.Sum {
+  font-size: 28px;
+  line-height: 140%;
+  font-weight: bold;
+  color: #3d3d3d;
+  min-width: 178px;
+}
+
+.SumOwnLine {
+  font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #333333;
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .PageMobile {
+    margin: 0px;
+    padding-top: 0;
+  }
+}
+
+.address-line {
+  padding-top: 20px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: flex-start;
+  line-height: 32px;
+  font-size: 14px;
+  color: #333333;
+  text-align: left;
+}
+
+.ParameterText {
+  padding-top: 20px;
+  padding-right: 40px;
+  display: flex;
+  color: #3d3d3d !important;
+}
+
+.ParameterColumns {
+  padding-top: 20px;
+  padding-right: 40px;
+  display: block;
+  column-count: 2;
+  column-gap: 40px;
+  color: #3d3d3d !important;
+}
+
+.X10 {
+  font-size: 14px;
+  align-items: center;
+  display: flex;
+}
+
+.IconPic {
+  padding-right: 15px !important;
+  padding-top: 2px;
+}
+
+.one-feature {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+.attr-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px !important;
+}
+
+.Icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-bottom: 3.5px;
+}
+
+.Icons button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #3d3d3d;
+  padding-right: 15px;
+}
+
+.IconButtonLast {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0 0 5px 0;
+  white-space: nowrap;
+  font-family: 'Montserrat', sans-serif !important;
+  cursor: pointer;
+}
+
+.IconButton2 {
+  background-color: transparent;
+  border: none;
+  padding-right: 55px !important;
+  margin-bottom: 6px;
+}
+
+.home-title-lined {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.feat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.feat-item {
+  color: #3d3d3d;
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  text-transform: capitalize !important;
+  max-width: 260px;
+  overflow-wrap: break-word;
+}
+
+.type-estate {
+  padding-top: 10px !important;
+  color: #3d3d3d;
+  opacity: 0.7;
+}

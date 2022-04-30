@@ -1,0 +1,94 @@
+.listed {
+  margin-top: 10px !important;
+  background-color: #f6f6f4 !important;
+  padding: 20px 10px 20px 20px !important;
+}
+
+.listed div:last-child div span:first-child {
+  width: 270px;
+}
+
+.agent-list-wrap {
+  padding-left: 20px !important;
+  overflow: hidden;
+  padding-bottom: 20px !important;
+}
+
+.heading-listed {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px !important;
+  padding-top: 20px !important;
+  padding-left: 20px !important;
+}
+
+.desc-and-listed {
+  display: flex;
+  flex-direction: row !important;
+  padding-top: 40px;
+}
+
+.desc-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  text-align: left;
+  padding-top: 20px !important;
+}
+
+.desc-wrapper {
+  text-align: left;
+  margin-bottom: 15px;
+  max-width: 95%;
+}
+
+.home-title-lined {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.truncText {
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.agent-data-line {
+  font-size: 15px;
+  line-height: 23px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.link-agent {
+  color: #227bbb;
+  text-decoration: underline;
+}
+
+.empty-field {
+  height: 30px;
+}
+
+.lists {
+  list-style-type: none;
+  display: inline-block;
+  column-count: 2;
+  column-gap: 50px;
+  padding-left: 0px;
+  margin: 0;
+}
+
+.ParameterHeadingNoPadding {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #979797;
+  padding-bottom: 20px !important;
+  text-align: left;
+}

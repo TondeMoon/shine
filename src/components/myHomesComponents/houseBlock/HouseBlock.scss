@@ -1,0 +1,95 @@
+@use '../../../pageStyles/variables' as v;
+@use '../../../pageStyles/mixins' as m;
+
+.HouseBlock {
+  background: white;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 20px rgba(131, 138, 162, 0.25);
+  border: 1px v.$gray-border;
+  border-radius: 0;
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+.HouseBlock:hover {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+  color: #ffffff;
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+.ImageBig {
+  overflow: hidden;
+  height: 300px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.Heading {
+  font-weight: v.$semiplusbold !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  color: v.$dark-gray !important;
+  max-width: 80%;
+  text-decoration: none;
+  height: 60px;
+}
+
+.Text {
+  font-style: italic;
+  margin-bottom: 15px;
+  color: v.$heading-gray;
+  height: 38px;
+}
+
+.RowLine {
+  margin: 12px 0 14px 0;
+  background-color: v.$card-line;
+  height: 0.5px !important;
+  opacity: 0.3;
+  border: 0;
+  border-bottom-width: 0;
+}
+
+.ShareWord {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: v.$dark-gray;
+}
+
+.ArrowForward {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  height: 50px !important;
+  width: 50px !important;
+  top: 32px;
+  right: 30px;
+  @include m.arrowNextInRound();
+
+  @media (max-width: 992px) {
+    right: 20px;
+  }
+}
+
+.SumShares {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
+  color: v.$dark-gray;
+}
+
+.Spaces {
+  padding: 30px 20px 20px 20px !important;
+  height: 146px;
+  position: relative;
+
+  @media (max-width: 500px) {
+    height: auto;
+  }
+}

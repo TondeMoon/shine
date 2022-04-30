@@ -1,0 +1,142 @@
+@use '../../../pageStyles/variables' as v;
+@use '../../../pageStyles/mixins' as m;
+
+.booking-page {
+  font-family: Montserrat, sans-serif !important;
+  padding: 40px 30px 20px 30px;
+  min-height: 100%;
+  max-width: v.$max-width;
+  margin: 0 auto;
+}
+
+.home-title-lined {
+  @include m.midTitle();
+  line-height: 22px !important;
+}
+
+.name-container {
+  font-size: 20px !important;
+  line-height: 24px !important;
+  font-weight: 600 !important;
+  color: #3d3d3d !important;
+  text-align: left;
+  display: flex;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.name-block {
+  display: flex;
+  flex-direction: row;
+
+  @media (max-width: 1180px) {
+    flex-direction: column;
+  }
+}
+
+.chipBlock {
+  display: flex;
+  flex-direction: row;
+  
+  @media (max-width: 1280px) {
+    margin-bottom: 20px;
+    margin-top: 18px;  
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    margin: 8px 0 20px 0;
+  }
+}
+
+.chipBlock div {
+  @media (max-width: 600px) {
+margin: 5px 0;
+  }
+}
+
+.modalFaq {
+  width: 692px !important;
+  transform: translate(-50%, -50%) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  @media (max-width: 700px) {
+    width: 400px !important;
+  }
+
+  @media (max-width: 450px) {
+    width: 100% !important;
+    height: 100%;
+  }
+}
+
+.modalFaq h1 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: #3d3d3d;
+  position: relative;
+
+  @media (max-width: 500px) {
+    padding-top: 60px;
+  }
+}
+
+.crossButton {
+ background-image: url('../../../images/xCross.svg');
+ background-size: 100% 100%;
+ background-position: center center;
+ background-color: transparent;
+ padding: 0;
+ margin: 0;
+ position: absolute;
+ top: 50px;
+ right: 50px;
+ height: 20px;
+ width: 20px;
+ border: none;
+
+ @media (min-width: 500px) {
+  top: 30px;
+  right: 30px;
+  height: 20px;
+  width: 20px;
+}
+
+ @media (min-width: 700px) {
+   display: none;
+ }
+}
+
+
+.IconButton {
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+} 
+
+.SumOwn {
+  font-weight: 400;
+    font-size: 14px;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: #333333;
+    font-family: Montserrat, sans-serif !important;
+}
+
+.have {
+  font-family: Montserrat, sans-serif !important;
+}
+
+.staysText {
+  font-size: 16px;
+  font-weight: 500;
+}

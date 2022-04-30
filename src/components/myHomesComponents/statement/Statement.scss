@@ -1,0 +1,50 @@
+@use '../../../pageStyles/variables' as v;
+@use '../../../pageStyles/mixins' as m;
+
+.statementWrap {
+  @include m.calendarWrap();
+}
+
+.graphTitle {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: v.$dark-gray;
+}
+
+.dropdownWrap {
+  @media (max-width: 900px) {
+    padding-bottom: 40px;
+  }
+}
+
+.colorDot {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.dot {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  background-color: v.$dark-line;
+}
+
+.dotText {
+  padding-left: 10px !important;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.totalMonthCost {
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+
+  @media (min-width: 900px) {
+    font-size: 14px;
+  }
+}

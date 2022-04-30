@@ -1,0 +1,83 @@
+input:-internal-autofill-selected {
+  background-color: #ffffff !important;
+}
+
+.common-button {
+  font-family: 'Montserrat', sans-serif !important;
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 68px;
+  color: #333333;
+  font-weight: 500;
+  font-size: 17px !important;
+  height: 44px;
+  line-height: 22px;
+  text-align: center;
+  padding: 11px 22px 11px 25px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  letter-spacing: 0.07em;
+  margin-top: 24px;
+  margin-bottom: 39px;
+  width: 337px;
+
+  @media (max-width: 1024px) {
+    padding: 15px 28px;
+    font-size: 12px;
+    height: 43px;
+  }
+
+  @media (max-width: 415px) {
+    padding: 17px 30px;
+    font-size: 12px;
+    height: 50px;
+  }
+
+  &:hover {
+    background: #595959;
+    color: #ffffff;
+  }
+
+  &:focus {
+    background: #333333;
+    color: #ffffff;
+  }
+}
+
+.login-title {
+  font-size: 24px !important;
+  line-height: 41px !important;
+  font-weight: 500 !important;
+  margin-bottom: 24px !important;
+}
+
+.link-group {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  line-height: 22px;
+  padding-bottom: 10px;
+}
+
+.link-group span {
+  padding-right: 8px;
+}
+
+.link-group a {
+  color: #007aff;
+  font-size: 12px;
+  line-height: 22px;
+  text-decoration: underline;
+  text-underline-offset: 1px;
+}
+
+.textfield {
+  position: relative;
+}
+
+.eye-password {
+  position: absolute;
+  right: 0;
+  z-index: 200;
+}

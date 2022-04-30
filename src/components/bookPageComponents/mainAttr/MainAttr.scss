@@ -1,0 +1,63 @@
+.ParameterHeading {
+  font-weight: semibold;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #3d3d3d;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  text-align: left;
+}
+
+.ParameterHeadingSum {
+  padding-top: 30px;
+}
+
+.Sum {
+  font-size: 28px;
+  line-height: 140%;
+  font-weight: bold;
+  color: #3d3d3d;
+  min-width: 178px;
+}
+
+.SumOwnLine {
+  padding-top: 18px !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.feat-group {
+ display: flex;
+ flex-direction: column;
+}
+
+.type-estate {
+  padding-top: 10px !important;
+  color: #3d3d3d;
+  opacity: 0.7;
+}
+
+.one-feat-main-info {
+  min-width: 160px;
+  text-align: left;
+  padding-bottom: 5px !important;
+  font-size: 15px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.prop-name {
+  width: 130px;
+  padding-right: 5px !important;
+}
+
+.prop-name-type {
+  padding-right: 10px;
+}
+
+.prop-name-date {
+  width: 90px;
+  padding-right: 10px;
+}

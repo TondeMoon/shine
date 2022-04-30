@@ -1,0 +1,37 @@
+{
+  "h1": "Stay Confirmed",
+  "changed": "Booking change confirmed",
+  "timing": ["Upcoming", "Past", "Cancelled"],
+  "advance": "ADVANCE STAY TRACKER",
+  "special": "special date",
+  "date": "date",
+  "specialStays": " Special Dates",
+  "part": "Stays",
+  "booked": "BOOKED ON",
+  "changedOn": "CHANGED ON",
+  "modify": "Modify stay",
+  "cancel": "Cancel stay",
+  "help": "NEED HELP WITH THIS STAY?",
+  "copyC": "copied to clipboard!",
+  "upcome": "upcoming",
+  "past": "past",
+  "cycles": {
+    "cycle": "Stay Cycles Explained",
+    "text": "You may ",
+    "button": "OK"
+  },
+  "details": "Stay details",
+  "maps": "MAPS",
+  "contact": "CONTACT",
+  "copy": "COPY",
+  "godetails": "Go to stay details",
+  "manager": "MANAGER",
+  "code": "CONFIRMATION CODE",
+  "conf": "45f",
+  "cancelContact": {
+    "h1": "Contact oww Sales Crew",
+    "phone": "(499) 999 000 0",
+    "email": "sales@oo.com",
+    "ok": "Ok"
+  }
+}

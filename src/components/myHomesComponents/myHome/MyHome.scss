@@ -1,0 +1,38 @@
+@use '../../../pageStyles/mixins' as m;
+@use '../../../pageStyles/variables' as v;
+
+.header-modal {
+  @include m.bigHeader();
+  font-size: 18px !important;
+  text-align: left !important;
+}
+
+.modal-item {
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.close-button {
+  @include m.whiteButton();
+  width: 140px;
+  margin: 40px auto 0 auto;
+}
+
+.modal-item-colored {
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  line-height: 15px !important;
+  color: #ffffff;
+  background-color: v.$calendarTop;
+  padding-top: 11px !important;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: -30px !important;
+  margin-right: -30px !important;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,12 @@
+@use '../../../pageStyles/variables' as v;
+@use '../../../pageStyles/mixins' as m;
+
+.modal-button {
+  @include m.whiteButton();
+  width: 140px;
+  margin: 24px auto 0 auto;
+  height: 36px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,224 @@
+@use '../../../pageStyles/variables.scss' as *;
+@import url('../../../pageStyles/_mixins.scss');
+
+.TopHeader {
+  margin-left: 0 !important;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  height: 80px;
+  box-shadow: 0px 2px 20px rgba(131, 138, 162, 0.25);
+
+  @media (max-width: 992px) {
+    height: 70px;
+  }
+}
+
+.WidthContainer {
+  max-width: $max-width;
+  margin: 0 auto !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.Logo {
+  padding-left: 30px !important;
+  padding-top: 22px;
+  padding-bottom: 20px;
+  margin: 0 !important;
+
+  @media (max-width: 992px) {
+    padding-top: 18.1px;
+    padding-bottom: 14.5px;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 1470px) {
+    padding-left: 0 !important;
+  }
+}
+
+.Logo div img {
+  @media (max-width: 500px) {
+    width: 142px;
+    height: 24px;
+  }
+}
+
+.Navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  text-transform: uppercase;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.Navbar a {
+  padding-top: 32px !important;
+  padding-bottom: 28.5px !important;
+  text-decoration: none;
+  color: #ffffff !important;
+  padding: 0 20px;
+  text-align: center;
+  background: transparent;
+  display: inline-block;
+  font-weight: $semibold;
+  font-size: 14px;
+  line-height: 19.5px;
+  transition-duration: 1000ms;
+  transition-property: transform;
+
+  @media (max-width: 992px) {
+    padding-top: 26px !important;
+    padding-bottom: 14.5px !important;
+  }
+}
+
+.Navbar a:hover {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+  color: #ffffff;
+  transition-duration: 1000ms;
+  transition-property: transform;
+}
+
+.Person {
+  padding-top: 3px;
+  padding-left: 4px;
+  height: 21.5px;
+  width: 21.5px;
+}
+
+.Bell {
+  height: 25px;
+  padding-top: 3px;
+  width: 20px;
+}
+
+.iconMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.iconMenu > div {
+  padding-right: 35px;
+
+  @media (max-width: 900px) {
+    padding-right: 20px;
+  }
+
+  @media (max-width: 400px) {
+    padding-right: 15px;
+  }
+}
+
+.Burger {
+  height: 15px;
+  width: 20px;
+}
+
+.BurgerButton {
+  background-color: transparent;
+  border: none;
+  padding-left: 20px;
+  padding-right: 30px !important;
+  cursor: pointer;
+
+  @media (min-width: 900px) {
+    display: none;
+  }
+
+  @media (max-width: 500px) {
+    padding-left: 0px;
+  }
+}
+
+.CloseButton {
+  background-color: transparent;
+  border: none;
+  text-align: right;
+  cursor: pointer;
+}
+
+.Modal {
+  right: 0 !important;
+  z-index: 900 !important;
+  position: fixed;
+  width: 414px;
+  height: 100vh;
+  top: 0;
+  padding: 18px 25px 30px 5px !important;
+  background-color: $light-beige;
+  bottom: 0;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  box-shadow: rgb(0 0 0 / 15%) -2px 2px 4px;
+
+  @media (max-width: 415px) {
+    width: 100vw;
+    padding: 18px 25px 30px 30px !important;
+  }
+
+  @media (min-width: 992px) {
+    width: 273px;
+    padding: 25px 25px 30px 5px !important;
+  }
+}
+
+.ModalHeading {
+  display: flex;
+  flex-direction: column;
+}
+
+.None {
+  display: none;
+}
+
+.ModalNavbar {
+  margin: 0 0 0 19px;
+  background-color: $light-beige !important;
+}
+
+.MenuBlockLower {
+  border: none !important;
+  padding-left: 0;
+  padding-top: 66px;
+  padding-bottom: 14px;
+  background-color: $light-beige !important;
+  text-transform: uppercase;
+  box-shadow: none !important;
+
+  @media (max-width: 992px) {
+    padding-left: 65px;
+  }
+}
+
+.MenuPoints {
+  font-weight: $semiplusbold;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  font-weight: $semibold;
+
+  @media (min-width: 1500px) {
+    line-height: 30px;
+  }
+}
+
+.MenuPoints a {
+  padding-bottom: 18px;
+  text-decoration: none;
+}
+
+.MenuPoints a:hover {
+  color: $hover-grey;
+}

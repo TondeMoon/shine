@@ -1,0 +1,21 @@
+@use '../pageStyles/variables' as v;
+@use '../pageStyles/mixins' as m;
+
+
+.emptyHeight {
+  @include m.emptyHeight()
+}
+
+.title {
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 140% !important;
+  color: #23262f !important;
+  padding: 60px 0 0 30px;
+  margin: 0  auto !important;
+  max-width: v.$max-width;
+
+  @media (min-width: 1470px) {
+    padding-left: 0;
+  }
+}

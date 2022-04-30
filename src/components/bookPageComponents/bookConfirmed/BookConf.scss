@@ -1,0 +1,66 @@
+@use '../../../pageStyles/mixins' as m;
+@use '../../../pageStyles/variables' as v;
+
+
+.stayTitle {
+  font-weight: 600 !important;
+  font-size: 24px !important;
+  line-height: 140% !important;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto !important;
+  padding-top: 32px;
+  padding-bottom: 20px;
+}
+
+.ParameterBlueText {
+  color: v.$calendarTop;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: right;
+  padding-top: 20px;
+  cursor: pointer;
+}
+
+.lowerWrap {
+  padding: 0 30px;
+}
+
+.confWrap {
+  @include m.calendarWrap()
+}
+
+.roundBlackButton {
+  @include m.darkButton();
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.ParameterSmallText {
+  font-size: 14px !important;
+  padding-top: 20px;
+  padding-right: 40px;
+  display: flex;
+  color: #3d3d3d !important;
+}
+
+.bookDateAfter {
+  color: #7E7CCF;
+  padding-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+ text-align: center;
+ text-transform: uppercase;
+ line-height: 20px;
+}
+
+.chooseAfter {
+  @include m.smallHeader();
+  padding-top: 5px;
+  padding-bottom: 16px !important;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  text-decoration-color: #CCD0DB;
+} 
